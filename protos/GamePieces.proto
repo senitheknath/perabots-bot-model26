@@ -5,7 +5,7 @@
 # Pieces are dynamic (30 g) so a gripper can pick them up. Delete a 'physics' node to make a piece static.
 # cylinderRotation stands the Cylinder primitive upright (rotating 90 deg around X).
 PROTO GamePieces [
-  field SFRotation cylinderRotation 1 0 0 1.5708
+  field SFRotation cylinderRotation 0 0 0 1.5708
 ] {
   Group {
     children [
