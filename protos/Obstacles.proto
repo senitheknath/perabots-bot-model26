@@ -1,5 +1,6 @@
 #VRML_SIM R2025a utf8
-# Obstacles.proto - the 43 fixed obstacle cubes for Section 1
+# Obstacles.proto - the 47 fixed obstacle cubes for Section 1 (10 cm cubes)
+# obstacle_1..43 : layout carried over from the old map; obstacle_44..47 continue the bottom chain to the arena wall.
 # Packaged as a PROTO so it appears as a single locked node in the scene tree.
 # To edit the internals deliberately: right-click the Obstacles node -> Convert to Base Node(s)
 PROTO Obstacles [
@@ -819,6 +820,82 @@ PROTO Obstacles [
         }
       ]
       name "obstacle_43"
+      boundingObject Box {
+        size 0.1 0.1 0.1
+      }
+    }
+    Solid {
+      translation 2.22 0.86 0.05
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.02 0.02 0.02
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.1 0.1 0.1
+          }
+        }
+      ]
+      name "obstacle_44"
+      boundingObject Box {
+        size 0.1 0.1 0.1
+      }
+    }
+    Solid {
+      translation 2.26 0.96 0.05
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.02 0.02 0.02
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.1 0.1 0.1
+          }
+        }
+      ]
+      name "obstacle_45"
+      boundingObject Box {
+        size 0.1 0.1 0.1
+      }
+    }
+    Solid {
+      translation 2.31 1.06 0.05
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.02 0.02 0.02
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.1 0.1 0.1
+          }
+        }
+      ]
+      name "obstacle_46"
+      boundingObject Box {
+        size 0.1 0.1 0.1
+      }
+    }
+    Solid {
+      translation 2.35 1.16 0.05
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.02 0.02 0.02
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.1 0.1 0.1
+          }
+        }
+      ]
+      name "obstacle_47"
       boundingObject Box {
         size 0.1 0.1 0.1
       }
